@@ -5,5 +5,4 @@ RUN curl -sSL --compressed 'https://github.com/c032/unbound-blocklist/raw/output
 
 COPY ./etc/unbound/unbound.conf /etc/unbound/unbound.conf
 
-
 CMD ["/usr/sbin/unbound", "-d"]
