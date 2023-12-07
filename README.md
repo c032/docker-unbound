@@ -15,3 +15,7 @@ Make a DNS query using `drill`:
 ```sh
 drill -p 5353 @127.0.0.1 A example.com.
 ```
+
+## License
+
+Apache 2.0
