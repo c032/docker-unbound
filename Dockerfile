@@ -1,9 +1,9 @@
-FROM alpine:3.19 AS blocklist
+FROM public.ecr.aws/docker/library/alpine:3.21.3 AS blocklist
 
 RUN apk add curl
 RUN curl -sSL --compressed 'https://github.com/c032/unbound-blocklist/raw/output/merged.conf' > /tmp/unbound-blocklist.conf
 
-FROM alpine:3.19
+FROM public.ecr.aws/docker/library/alpine:3.21.3
 
 RUN apk add dumb-init unbound
 
